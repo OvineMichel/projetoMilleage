@@ -10,8 +10,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: telaForm()
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Cálculo de Viagem',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
+      home: const TelaForm(),
     );
   }
 }
